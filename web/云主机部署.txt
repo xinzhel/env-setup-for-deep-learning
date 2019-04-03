@@ -1,0 +1,21 @@
+
+# 2 - 安装nginx
+sudo apt install -y nginx
+
+# 3 - 安装 Mysql：查看数据库Mysql的文档
+
+# 4 - 安装git	, 查看 flask_env
+
+
+# 5 - 安装python，查看 flask_env
+
+# 6 - 安装扩展，查看 flask_env 
+	#source  /data/www/python3_vir/bin/activate
+	#pip install -r requirements.txt
+
+# 7 - 启动项目
+	# a. export ops_config=production
+	# b. 启动方式
+		#i.	python manage.py runserver（单进程）
+		#ii.	uwsgi --ini uwsgi.ini （多进程）
+# https证书, 参考文章：https://fanzheng.org/archives/21
