@@ -2,9 +2,7 @@
 sudo apt update && upgrade
 
 # install pip, ipython3
-sudo apt install python3-pip ipython3
-# pip3 install jupyter
-pip3 install jupyterlab
+sudo apt install python3-pip
 
 
 
