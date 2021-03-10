@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to create Azure DSVM Spot instance with NVidia P100 GPU and install fast.ai library
+# Script to create Azure DSVM Spot instance with NVidia P100 GPU  
 read -p "Azure VM Name (default: dsvm): " vminput
 vmname=${vminput:=dsvm}
 
