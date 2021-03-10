@@ -20,7 +20,7 @@ az group create --name $vmname -l $vmzone
 echo "Creating Azure Data Science VM $vmname..."
 # You can change the size parameter if you want something other than NVidia K80 GPU instance. 
 # You can find Azure size labels by running Azure CLI command in Cloud Shell "az vm list-sizes -l westus2 -o table"  
-az vm create --name $vmname -g $vmname --image microsoft-dsvm:ubuntu-1804:1804:latest  --priority Spot --size Standard_NC6s_v3 --eviction-policy Deallocate --storage-sku StandardSSD_LRS --admin-user xinzhel --admin-password $password
+az vm create --name $vmname -g $vmname --image microsoft-dsvm:ubuntu-1804:1804:latest  --priority Spot --size Standard_NC6s_v3 --eviction-policy Deallocate --storage-sku StandardSSD_LRS --data-disk-sizes-gb 64 --admin-user xinzhel --admin-password $password
 az vm open-port --name $vmname -g $vmname --port 8000
 
 #echo "Installing  fastai v2 and notebooks..."
