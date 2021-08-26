@@ -22,10 +22,19 @@ This setting refers to  [this official tutorial](https://git-scm.com/book/uz/v2/
     export PS1='\w$(__git_ps1 " (%s)")\$ '
    ```
 
-   
-   
-
-
+## Bash
+add the following content into bash profile
+```
+   # customize prompt
+   GOPATH=$HOME/go
+   function _update_ps1() {
+               PS1="$($GOPATH/bin/powerline-go -error $?)"
+       }
+   if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
+               PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+   fi
+   source "$HOME/.cargo/env"
+```
 
 ## Tensorflow GPU
 
