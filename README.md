@@ -1,4 +1,12 @@
-# Configurations of environment
+# Program in my OS
+## Apps
+Zoom (login),
+Wechat (login),
+notion (login),
+vscode
+
+Windows app: onedrive, window terminals, WSL2
+
 ## Git 
 
 This setting refers to  [this official tutorial](https://git-scm.com/book/uz/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Bash).
