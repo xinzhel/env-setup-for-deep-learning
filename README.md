@@ -8,6 +8,9 @@ vscode
 Windows app: onedrive, window terminals, WSL2
 
 ## Git 
+```
+sudo apt install git -y
+```
 
 This setting refers to  [this official tutorial](https://git-scm.com/book/uz/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Bash).
 
