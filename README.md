@@ -5,6 +5,7 @@ My programming setup includes:
 - [VSCode For Code Editing And Debugging](#vscode-for-code-editing-and-debugging)
 - [pyenv for Python virtual environments across different Python versions](#python-virtual-environment)
 - [Others](#others)
+- [Use Windows](#use-windows)
 
 # Git For Code Management
 * Installation
