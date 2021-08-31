@@ -1,4 +1,4 @@
-This repository summarizes my personal setup for programming. My goal is to painlessly setup a new device or Linux VM to continue my work. 
+Because I always need to setup a programming environment whenever my supervisor gives me a new VM or I want to set up a VM on Azure or I accidentally lost the access to the daily-used device or I buy a new device. I ENJOY it as a learning process. This repository contains the content on how to painlessly setup a new device or Linux VM to continue my work and also the learning materials for programming on Linux.
 
 My programming setup includes:
 - [Git For Code Management](#git-for-code-management)
