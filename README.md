@@ -1,11 +1,12 @@
-Because I always need to setup a programming environment whenever my supervisor gives me a new VM or I want to set up a VM on Azure or I accidentally lost the access to the daily-used device or I buy a new device. I ENJOY it as a learning process. This repository contains the content on how to painlessly setup a new device or Linux VM to continue my work and also the learning materials for programming on Linux.
+Because I always need to setup a programming environment on Ubuntu. I ENJOY it as a learning process. This repository contains the learning materials for programming on Linux.
 
 My programming setup includes:
 - [Git For Code Management](#git-for-code-management)
 - [VSCode For Code Editing And Debugging](#vscode-for-code-editing-and-debugging)
 - [pyenv for Python virtual environments across different Python versions](#python-virtual-environment)
+- [Script for Automatic Setting-up](#script-for-automatic-setting-up)
 - [Others](#others)
-- [Use Windows](#use-windows)
+- [WSL 2 on Windows](#wsl-2-on-Windows)
 
 # Git For Code Management
 * Installation
@@ -26,6 +27,10 @@ sudo apt install git -y
 
 [Hands-on Scripts](pyenv.sh)
 
+
+
+# Script for Automatic Setting-up
+I set up programming environments whenever my supervisor gives me a new VM or I want to set up a VM on Azure or I accidentally lost the access to the daily-used device or I buy a new device. This script helps me painlessly setup a new device or Linux VM to continue my work.
 
 # OTHERS
 ## Bash
@@ -64,9 +69,15 @@ add the following content into bash profile
 `devtools::install_github('IRkernel/IRkernel') `
 `IRkernel::installspec()`
 
-# Use Windows
-To follow the minimal-OS principle and program-on-linux settings, here is my setup on Windows:
-1. Only install apps with web versions which can be accessed by browsers or all mainstream OS, e.g., onedrive for file management, Zoom (login), Wechat (login), notion (login).
-2. Only programming on Linux: So for Windows, I only program on WSL2 (separate linux kernel compared to WSL).
-3. For 2, I make some exceptions for 1. These exceptions incluude Window Terminal, WSL2, [Powerline for Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup).
-4. Refer [here](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode) to use vscode with WSL2 as the server and Windows as the client to provide the GUI.
+# WSL 2 on Windows
+To following the program-on-linux principle, here is my setup on Windows using (1) WSL2 (separate linux kernel compared to WSL), (2) [Window Terminal](https://github.com/microsoft/terminal), (3) [Powerline for Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup), (4) [vscode remote setup](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode).
+
+BTW, in order to have no reliability of any specific OS beyond programming, I only install common apps with web versions which can be accessed by browsers or all mainstream OS, e.g., onedrive for file management, Zoom (login), Wechat (login), notion (login).
+
+## Use Cuda
+[Nvidia use guide](https://docs.nvidia.com/cuda/wsl-user-guide/index.html)
+
+[Microsoft use guide ](https://docs.microsoft.com/en-us/windows/ai/directml/gpu-cuda-in-wsl)
+
+[gaps between WSL 2 and native Linux if you use Cuda-based applications](https://developer.nvidia.com/blog/leveling-up-cuda-performance-on-wsl2-with-new-enhancements/)
+
