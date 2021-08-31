@@ -1,13 +1,11 @@
-# Program in my OS
-## Apps
-Zoom (login),
-Wechat (login),
-notion (login),
-vscode
+This repository summarizes my personal setup for programming. My goal is to painlessly setup a new device or Linux VM to continue my work. 
 
-Windows app: onedrive, window terminals, WSL2
+My programming setup incluudes:
+* [git for code management](https://git-scm.com/downloads)
+* vscode for code editing, debugging
+* pyenv for Python virtual environments across different Python versions
 
-## Git 
+# Git 
 ```
 sudo apt install git -y
 ```
@@ -24,7 +22,14 @@ This setting refers to  [this official tutorial](https://git-scm.com/book/uz/v2/
     export GIT_PS1_SHOWDIRTYSTATE=1
     export PS1='\w$(__git_ps1 " (%s)")\$ '
    ```
+  
 
+# Python Virtual Environment
+
+[Hands-on Scripts](pyenv.sh)
+
+
+# OTHERS
 ## Bash
 add the following content into bash profile
 ```
@@ -53,14 +58,6 @@ add the following content into bash profile
       return 'Hello, ' + name
 ```
 
-  
-
-## Python Virtual Environment
-
-[Hands-on Scripts](pyenv.sh)
-
-
-
 ## Use R script in Jupyter. For using R in Jupyter:
 
 1. `apt-get install r-base r-base-dev libssl-dev libcurl3-dev curl`
@@ -69,3 +66,9 @@ add the following content into bash profile
 `devtools::install_github('IRkernel/IRkernel') `
 `IRkernel::installspec()`
 
+# Use Windows
+To follow the minimal-OS principle and program-on-linux settings, here is my setup on Windows:
+1. Only install apps with web versions which can be accessed by browsers or all mainstream OS, e.g., onedrive for file management, Zoom (login), Wechat (login), notion (login).
+2. Only programming on Linux: So for Windows, I only program on WSL2 (separate linux kernel compared to WSL).
+3. For 2, I make some exceptions for 1. These exceptions incluude Window Terminal, WSL2, [Powerline for Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup).
+4. Refer [here](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode) to use vscode with WSL2 as the server and Windows as the client to provide the GUI.
