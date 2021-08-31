@@ -1,28 +1,25 @@
 This repository summarizes my personal setup for programming. My goal is to painlessly setup a new device or Linux VM to continue my work. 
 
-My programming setup incluudes:
-* [git for code management](https://git-scm.com/downloads)
-* vscode for code editing, debugging
-* pyenv for Python virtual environments across different Python versions
+My programming setup includes:
+- [Git For Code Management](#git-for-code-management)
+- [VSCode For Code Editing And Debugging](#vscode-for-code-editing-and-debugging)
+- [pyenv for Python virtual environments across different Python versions](#python-virtual-environment)
+- [Others](#others)
 
-# Git 
+# Git For Code Management
+* Installation
 ```
 sudo apt install git -y
 ```
 
-This setting refers to  [this official tutorial](https://git-scm.com/book/uz/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Bash).
-
-1. Auto-completion: Copy `[git-completion.bash](git)` somewhere handy, e.g. home directory;
-   
-2. customize command line prompt: copy `[git-prompt.sh](git)` to home directory
-   Also add something like this to .bashrc
-   
-   ```
-    . ~/git-prompt.sh
-    export GIT_PS1_SHOWDIRTYSTATE=1
-    export PS1='\w$(__git_ps1 " (%s)")\$ '
-   ```
+* Setttings: refers to [this official tutorial](https://git-scm.com/book/uz/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Bash). It includes (1) Auto-completion: Copy `[git-completion.bash](git)` somewhere handy, e.g. home directory; (2) customize command line prompt: copy `[git-prompt.sh](git)` to home directory; (3) add the following to bash profile
+```
+ . ~/git-prompt.sh
+ export GIT_PS1_SHOWDIRTYSTATE=1
+ export PS1='\w$(__git_ps1 " (%s)")\$ '
+```
   
+# VSCode For Code Editing And Debugging
 
 # Python Virtual Environment
 
