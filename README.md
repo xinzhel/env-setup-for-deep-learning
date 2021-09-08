@@ -21,7 +21,9 @@ sudo apt install git -y
  export PS1='\w$(__git_ps1 " (%s)")\$ '
 ```
   
-# VSCode For Code Editing And Debugging
+# VSCode
+VSCode could be conveniently used as the client code editing and debugging interface for linux OS, either for [Windows WSL 2](https://code.visualstudio.com/blogs/2019/09/03/wsl2) or for [Azure Computing Instance](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-set-up-vs-code-remote?tabs=extension).
+
 
 # Python Virtual Environment
 
