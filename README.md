@@ -22,7 +22,7 @@ sudo apt install git -y
 ```
   
 # VSCode
-VSCode could be conveniently used as the client code editing and debugging interface for linux OS, either for [Windows WSL 2](https://code.visualstudio.com/blogs/2019/09/03/wsl2) or for [Azure Computing Instance](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-set-up-vs-code-remote?tabs=extension).
+VSCode could be conveniently used for code editing and debugging,mostly as the client interface, either for [Windows WSL 2](https://code.visualstudio.com/blogs/2019/09/03/wsl2) or for Azure VM or [Computing Instance](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-set-up-vs-code-remote?tabs=extension) or [Compute Cluster](https://docs.microsoft.com/en-au/azure/machine-learning/tutorial-train-deploy-image-classification-model-vscode).
 
 
 # Python Virtual Environment
@@ -71,15 +71,18 @@ add the following content into bash profile
 `devtools::install_github('IRkernel/IRkernel') `
 `IRkernel::installspec()`
 
-# WSL 2 on Windows
+
+# Linux on Windows (WSL 2)
 To following the program-on-linux principle, here is my setup on Windows using (1) WSL2 (separate linux kernel compared to WSL), (2) [Window Terminal](https://github.com/microsoft/terminal), (3) [Powerline for Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup), (4) [vscode remote setup](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode).
 
 BTW, in order to have no reliability of any specific OS beyond programming, I only install common apps with web versions which can be accessed by browsers or all mainstream OS, e.g., onedrive for file management, Zoom (login), Wechat (login), notion (login).
-
 ## Use Cuda
 [Nvidia use guide](https://docs.nvidia.com/cuda/wsl-user-guide/index.html)
 
 [Microsoft use guide ](https://docs.microsoft.com/en-us/windows/ai/directml/gpu-cuda-in-wsl)
 
 [gaps between WSL 2 and native Linux if you use Cuda-based applications](https://developer.nvidia.com/blog/leveling-up-cuda-performance-on-wsl2-with-new-enhancements/)
+
+# Linux VM on Cloud
+I normally use the script to set up Azure [DSVM](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/overview). [NC series VMs] (https://azure.microsoft.com/en-au/pricing/details/virtual-machines/linux/) provide GPU (including Tesla K80, V100) for deep learning. [Here] is the script I use to perform automated creation and setup of the VM.
 
