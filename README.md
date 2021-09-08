@@ -83,6 +83,6 @@ BTW, in order to have no reliability of any specific OS beyond programming, I on
 
 [gaps between WSL 2 and native Linux if you use Cuda-based applications](https://developer.nvidia.com/blog/leveling-up-cuda-performance-on-wsl2-with-new-enhancements/)
 
-# Linux VM on Cloud
+# Linux VM on Cloud (Azure)
 I normally use the script to set up Azure [DSVM](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/overview). [NC series VMs] (https://azure.microsoft.com/en-au/pricing/details/virtual-machines/linux/) provide GPU (including Tesla K80, V100) for deep learning. [Here] is the script I use to perform automated creation and setup of the VM.
 
