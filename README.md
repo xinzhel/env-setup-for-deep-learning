@@ -1,22 +1,22 @@
 Because I always need to setup a programming environment on Ubuntu. I ENJOY it as a learning process. This repository contains the learning materials for programming on Linux.
 
 My programming setup includes:
-- [Git For Code Management](#git-for-code-management)
+- [Git](#git)
 - [VSCode For Code Editing And Debugging](#vscode-for-code-editing-and-debugging)
 - [pyenv for Python virtual environments across different Python versions](#python-virtual-environment)
 - [Script for Automatic Setting-up](#script-for-automatic-setting-up)
 - [Others](#others)
 - [WSL 2 on Windows](#wsl-2-on-Windows)
 
-# Git For Code Management
+# Git
 
-# Git on the bash terminal (auto-completion, prompt) 
 * Installation
 ```
 sudo apt install git -y
 ```
-* [The official tutorial](https://git-scm.com/book/uz/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Bash)
-* [the necessary files](https://github.com/git/git/tree/master/contrib/completion)
+* auto-completion, prompt on bash
+ * [The official tutorial](https://git-scm.com/book/uz/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Bash)
+ * [the necessary files](https://github.com/git/git/tree/master/contrib/completion)
 * ps: Basic Learning Materials
   * [Github](https://docs.github.com/en/get-started/quickstart)
   * [Udacity Course](https://classroom.udacity.com/courses/ud775)
