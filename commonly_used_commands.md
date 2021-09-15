@@ -6,3 +6,4 @@
 `ps ax | grep ...`
 * kill a process
 `kill PID`
+* transfer files to remote vm: `scp -r /local/directory remote_username@10.10.0.2:/remote/directory`
