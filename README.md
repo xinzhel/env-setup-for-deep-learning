@@ -6,18 +6,3 @@ In this repository, I record my workflow and some nitty-gritty material to help 
 * GPU Cloud Server
 
 The programs/softwares include: git, python, vscode.
-
-
-# Terminals
-[Here](https://www.hanselman.com/blog/whats-the-difference-between-a-console-a-terminal-and-a-shell) is a good resource to distinguish the terminals from shells.
-* Gnome-terminal on Ubuntu 
-* [Window Terminal](https://github.com/microsoft/terminal)
-  *  [Powerline for Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup)
-  
-
-
-
-
-
-
-
