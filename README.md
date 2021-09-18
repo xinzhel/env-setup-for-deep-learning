@@ -30,47 +30,8 @@ VSCode could be conveniently used for code editing and debugging,mostly as the c
 
 
 # Python Virtual Environment
-
 [Hands-on Scripts](pyenv.sh)
 
-
-
-# OTHERS
-## Bash
-add the following content into bash profile
-```
-   # customize prompt
-   GOPATH=$HOME/go
-   function _update_ps1() {
-               PS1="$($GOPATH/bin/powerline-go -error $?)"
-       }
-   if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
-               PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-   fi
-   source "$HOME/.cargo/env"
-```
-
-## Tensorflow GPU
-
-```python
-  import json
-  from __future__ import absolute_import, division, print_function, unicode_literals
-  
-  import tensorflow as tf
-  print("Num GPUs Available: ", len(tf.config.experimental.list_physical_devices('GPU')))
-  
-  
-  def greet(name):
-      return 'Hello, ' + name
-```
-
-## Use R script in Jupyter. For using R in Jupyter:
-
-1. `apt-get install r-base r-base-dev libssl-dev libcurl3-dev curl`
-2. type the commands below in R prompt:
-`install.packages(c('pbdZMQ', 'repr', 'devtools'))`
-`devtools::install_github('IRkernel/IRkernel') `
-`IRkernel::installspec()`
 
 
 # Terminals
