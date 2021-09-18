@@ -1,6 +1,7 @@
 * Install WSL 2 (with separate linux kernel) from Microsoft Store
 * Install [vscode remote server](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode)
 * Install [Window Terminal](https://github.com/microsoft/terminal)
+  * [Here](https://www.hanselman.com/blog/whats-the-difference-between-a-console-a-terminal-and-a-shell) is a good resource to distinguish the terminals from shells. 
 * (Optinal for terminal display) Install [Powerline for Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup)
    * add the following content into bash profile
    ```
