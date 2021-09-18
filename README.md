@@ -1,12 +1,14 @@
-Because I always need to setup a programming environment on Ubuntu. I ENJOY it as a learning process. This repository contains the learning materials for programming on Linux.
+As a researcher working with scientific computing, I often programm on the linux environment and need to set up programming environments. In this repository, I record my workflow to setup my environment and some nitty-gritty material to help me understand how this workflow works and how to optimize my workflow to efficiently utilize the accessible resources, including
+* Linux subsystem on my local Windows: WSL 2
+* Azure VM: I normally use the script to set up Azure [DSVM](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/overview). [NC series VMs](https://azure.microsoft.com/en-au/pricing/details/virtual-machines/linux/) provide GPU (including Tesla K80, V100) for deep learning. [Here](https://github.com/xinzhel/machine_learning_on_linux/blob/master/AzureSpotDSVM.sh) is the script I use to perform automated creation and setup of the VM.
+* GPU Cloud Server
 
-My programming setup includes:
+Practical Setup
 - [Git](#git)
 - [VSCode For Code Editing And Debugging](#vscode-for-code-editing-and-debugging)
 - [pyenv for Python virtual environments across different Python versions](#python-virtual-environment)
 - [Script for Automatic Setting-up](#script-for-automatic-setting-up)
-- [Others](#others)
-- [WSL 2 on Windows](#wsl-2-on-Windows)
+- [Terminals](#terminal)
 
 # Git
 
@@ -32,9 +34,6 @@ VSCode could be conveniently used for code editing and debugging,mostly as the c
 [Hands-on Scripts](pyenv.sh)
 
 
-
-# Script for Automatic Setting-up
-I set up programming environments whenever my supervisor gives me a new VM or I want to set up a VM on Azure or I accidentally lost the access to the daily-used device or I buy a new device. This script helps me painlessly setup a new device or Linux VM to continue my work.
 
 # OTHERS
 ## Bash
@@ -74,17 +73,16 @@ add the following content into bash profile
 `IRkernel::installspec()`
 
 
-# Linux on Windows (WSL 2)
-To following the program-on-linux principle, here is my setup on Windows using (1) WSL2 (separate linux kernel compared to WSL), (2) [Window Terminal](https://github.com/microsoft/terminal), (3) [Powerline for Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup), (4) [vscode remote setup](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode).
+# Terminals
+[Here](https://www.hanselman.com/blog/whats-the-difference-between-a-console-a-terminal-and-a-shell) is a good resource to distinguish the terminals from shells.
+* Gnome-terminal on Ubuntu 
+* [Window Terminal](https://github.com/microsoft/terminal)
+  *  [Powerline for Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup)
+  
 
-BTW, in order to have no reliability of any specific OS beyond programming, I only install common apps with web versions which can be accessed by browsers or all mainstream OS, e.g., onedrive for file management, Zoom (login), Wechat (login), notion (login).
-## Use Cuda
-[Nvidia use guide](https://docs.nvidia.com/cuda/wsl-user-guide/index.html)
 
-[Microsoft use guide ](https://docs.microsoft.com/en-us/windows/ai/directml/gpu-cuda-in-wsl)
 
-[gaps between WSL 2 and native Linux if you use Cuda-based applications](https://developer.nvidia.com/blog/leveling-up-cuda-performance-on-wsl2-with-new-enhancements/)
 
-# Linux VM on Cloud (Azure)
-I normally use the script to set up Azure [DSVM](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/overview). [NC series VMs](https://azure.microsoft.com/en-au/pricing/details/virtual-machines/linux/) provide GPU (including Tesla K80, V100) for deep learning. [Here](https://github.com/xinzhel/machine_learning_on_linux/blob/master/AzureSpotDSVM.sh) is the script I use to perform automated creation and setup of the VM.
+
+
 
