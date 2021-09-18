@@ -3,12 +3,7 @@ As a researcher working with scientific computing, I often programm on the linux
 * Azure VM: I normally use the script to set up Azure [DSVM](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/overview). [NC series VMs](https://azure.microsoft.com/en-au/pricing/details/virtual-machines/linux/) provide GPU (including Tesla K80, V100) for deep learning. [Here](https://github.com/xinzhel/machine_learning_on_linux/blob/master/AzureSpotDSVM.sh) is the script I use to perform automated creation and setup of the VM.
 * GPU Cloud Server
 
-Practical Setup
-- [Git](#git)
-- [VSCode For Code Editing And Debugging](#vscode-for-code-editing-and-debugging)
-- [pyenv for Python virtual environments across different Python versions](#python-virtual-environment)
-- [Script for Automatic Setting-up](#script-for-automatic-setting-up)
-- [Terminals](#terminal)
+
 
 # Git
 
