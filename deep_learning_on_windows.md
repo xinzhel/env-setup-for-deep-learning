@@ -18,4 +18,4 @@
          source "$HOME/.cargo/env"
       ```
     
-   Now, we can have the familiar Linux Shell (with an actual Linux kernel) and VS-Code for programming.
+   Now, we can have the familiar **Bash Shell** (on an actual Linux kernel) and **VS-Code** for happy programming.
