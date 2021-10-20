@@ -12,7 +12,7 @@ curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer 
 # 2. sets environment variables in .bash_profile(or .profile or .bashrc) and pyenv initialization
 # https://www.baeldung.com/linux/bashrc-vs-bash-profile-vs-profile
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$HOME/.pyenv/bin:$PATH"
+export PATH="$HOME/.pyenv/bin:$HOME/.pyenv/shims:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
@@ -32,10 +32,11 @@ pyenv install 3.7.9
 # pyenv versions
 # global
 pyenv global 3.7.9
-# local: add .python-version in a project folder to automatically activation
-pyenv local 3.7.9
 # Set back System Python version: 
-pyenv global system
+# pyenv global system
+# local: add .python-version in a project folder to automatically activation
+# pyenv local 3.7.9
+
 
 # 5.1 use virtualenv
 pyenv virtualenv 3.7.9 pytorch-gpu
