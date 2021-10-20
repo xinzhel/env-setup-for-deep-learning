@@ -1,4 +1,7 @@
 * Install WSL 2 (with separate linux kernel) from Microsoft Store
+  * [Enable Nvidia GPU](https://docs.microsoft.com/en-us/windows/ai/directml/gpu-cuda-in-wsl) by referring to [Nvidia guide](https://docs.nvidia.com/cuda/wsl-user-guide/index.html)
+  * Note [gaps between WSL 2 and native Linux if you use Cuda-based applications](https://developer.nvidia.com/blog/leveling-up-cuda-performance-on-wsl2-with-new-enhancements/)
+
 * Install [VS-Code and WSL remote extension](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode) on the WSL distribtion.
 * Install [Window Terminal](https://github.com/microsoft/terminal)
   * [Here](https://www.hanselman.com/blog/whats-the-difference-between-a-console-a-terminal-and-a-shell) is a good resource to distinguish the terminals from shells. 
@@ -15,8 +18,3 @@
       fi
       source "$HOME/.cargo/env"
    ```
-
-* Use Cuda
-    * [Nvidia use guide](https://docs.nvidia.com/cuda/wsl-user-guide/index.html)
-    * [Microsoft use guide ](https://docs.microsoft.com/en-us/windows/ai/directml/gpu-cuda-in-wsl)
-    * Note [gaps between WSL 2 and native Linux if you use Cuda-based applications](https://developer.nvidia.com/blog/leveling-up-cuda-performance-on-wsl2-with-new-enhancements/)
