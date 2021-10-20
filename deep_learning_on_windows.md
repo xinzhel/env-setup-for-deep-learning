@@ -4,7 +4,6 @@
 
 * Install [VS-Code and WSL remote extension](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode) on the WSL distribtion.
 * Install [Window Terminal](https://github.com/microsoft/terminal)
-  * [Here](https://www.hanselman.com/blog/whats-the-difference-between-a-console-a-terminal-and-a-shell) is a good resource to distinguish the terminals from shells. 
   * (Optinal for terminal display) Install [Powerline for Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup)
     * add the following content into bash profile
       ```
@@ -18,3 +17,5 @@
          fi
          source "$HOME/.cargo/env"
       ```
+    
+   Now, we can have the familiar Linux Shell (with an actual Linux kernel) and VS-Code for programming.
