@@ -28,10 +28,14 @@ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev li
 pyenv install 3.7.9
 
 # 5. use different python versions
+# check default version by adding 3.7.9 into the file: .pyenv/version
+# pyenv versions
 # global
 pyenv global 3.7.9
 # local: add .python-version in a project folder to automatically activation
 pyenv local 3.7.9
+# Set back System Python version: 
+pyenv global system
 
 # 5.1 use virtualenv
 pyenv virtualenv 3.7.9 pytorch-gpu
