@@ -25,7 +25,7 @@ pyenv update
 # 4 install python
 # some necessary packages
 sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev
-pyenv install python3.7.9
+pyenv install 3.7.9
 
 # 5. use different python versions
 # global
