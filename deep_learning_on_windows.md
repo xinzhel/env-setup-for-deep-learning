@@ -1,5 +1,6 @@
 * Install WSL 2 (with separate linux kernel)
   * run `wsl --install -d Ubuntu-18.04` in PowerShell (Ubuntu-18.04 is my preferred Linux distribution)
+  * Caveat: in my case, I have to restart my PC to launch the Ubuntu 
 * Enable Nvidia GPU for the Linux distribution
   * Download [the CUDA driver](https://developer.nvidia.com/cuda/wsl) for WSL 2 on the Windows 11 system
   * 
