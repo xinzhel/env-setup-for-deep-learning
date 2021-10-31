@@ -2,7 +2,7 @@ As a researcher working with scientific computing and ML, using the linux comman
 
 In this repository, I record my workflow and some nitty-gritty material to help me understand how this workflow works and how to optimize my workflow to efficiently utilize the accessible resources, including
 * [Linux environment setup on Windows](https://gist.github.com/xinzhel/e6e60d5aece30703fb10f0b2e555e639)
-* [Python environment setup on Linux]()
+* [Python environment setup on Linux](https://github.com/xinzhel/machine_learning_on_linux/blob/master/pyenv.sh)
 
 * Azure VM: I normally use the script to set up Azure [DSVM](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/overview). [NC series VMs](https://azure.microsoft.com/en-au/pricing/details/virtual-machines/linux/) provide GPU (including Tesla K80, V100) for deep learning. [Here](https://github.com/xinzhel/machine_learning_on_linux/blob/master/AzureSpotDSVM.sh) is the script I use to perform automated creation and setup of the VM.
 * GPU Cloud Server
