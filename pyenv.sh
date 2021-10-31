@@ -17,7 +17,9 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 eval "$(pyenv virtualenv-init -)"
-source ~/.bash_profile
+
+# update the file
+# source ~/.bash_profile
 
 # 3. pyenv update
 pyenv update
