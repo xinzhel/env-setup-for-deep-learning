@@ -1,7 +1,7 @@
 * Install WSL 2 (with separate linux kernel)
   * run `wsl --install -d Ubuntu-18.04` in PowerShell (Ubuntu-18.04 is my preferred Linux distribution)
   * Caveat: in my case, I have to restart my PC to launch the Ubuntu 
-* Install [the CUDA driver](https://developer.nvidia.com/cuda/wsl) to enable Nvidia GPU for applications on both native Windows the Linux distribution
+* Install [the CUDA driver by clicking this link](https://developer.nvidia.com/cuda/wsl) to enable Nvidia GPU for applications on both native Windows the Linux distribution
   * (Note) [gaps between WSL 2 and native Linux if you use Cuda-based applications](https://developer.nvidia.com/blog/leveling-up-cuda-performance-on-wsl2-with-new-enhancements/)
   * (Optional) change default user in WSL Ubuntu bash: `ubuntu config --default-user <username>`
 * Install CUDA toolkits for creating CUDA applications (e.g., build deep learning models in PyTorch)
