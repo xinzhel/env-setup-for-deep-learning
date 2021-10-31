@@ -1,6 +1,8 @@
-* Install WSL 2 (with separate linux kernel) from Microsoft Store
+* Install WSL 2 (with separate linux kernel)
   * run `wsl --install -d Ubuntu-18.04` in PowerShell (Ubuntu-18.04 is my preferred Linux distribution)
-  * [Enable Nvidia GPU](https://docs.microsoft.com/en-us/windows/ai/directml/gpu-cuda-in-wsl) by referring to [Nvidia guide](https://docs.nvidia.com/cuda/wsl-user-guide/index.html)
+* Enable Nvidia GPU for the Linux distribution
+  * Download [the CUDA driver](https://developer.nvidia.com/cuda/wsl) for WSL 2 on the Windows 11 system
+  * 
   * Note [gaps between WSL 2 and native Linux if you use Cuda-based applications](https://developer.nvidia.com/blog/leveling-up-cuda-performance-on-wsl2-with-new-enhancements/)
   * change default user in WSL Ubuntu bash: `ubuntu config --default-user <username>`
 * Install [VS-Code and WSL remote extension](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode) on the WSL distribtion.
@@ -20,3 +22,7 @@
       ```
     
    Now, we can have the familiar **Bash Shell** (on an actual Linux kernel) and **VS-Code** for happy programming.
+
+* Official Reference
+  * [Windows: Enable Nvidia GPU](https://docs.microsoft.com/en-us/windows/ai/directml/gpu-cuda-in-wsl)
+  * [Nvidia guide](https://docs.nvidia.com/cuda/wsl-user-guide/index.html)
