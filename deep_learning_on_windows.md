@@ -17,7 +17,3 @@
       ```
     
    Now, we can have the familiar **Bash Shell** (on an actual Linux kernel) and **VS-Code** for happy programming.
-
-* Official Reference
-  * [Windows: Enable Nvidia GPU](https://docs.microsoft.com/en-us/windows/ai/directml/gpu-cuda-in-wsl)
-  * [Nvidia guide](https://docs.nvidia.com/cuda/wsl-user-guide/index.html)
